@@ -20,7 +20,7 @@
 "});\r",
 "pm.test(\"Test user\", function () {\r",
 "    var jsonData = pm.response.json();\r",
-"    pm.expect(jsonData.email).to.eql('email@yandex.com');\r",
+"    pm.expect(jsonData.email).to.eql('email@google.com');\r",
 "    pm.expect(jsonData.nickname).to.eql('Nick Name');\r",
 "    pm.expect(jsonData.birthdate).to.eql('2001-04-03');\r",
 "});"
@@ -45,7 +45,7 @@
 ],
 "body": {
 "mode": "raw",
-"raw": "{\r\n  \"email\": \"email@yandex.com\",\r\n  \"nickname\": \"Nick Name\",\r\n  \"birthdate\": \"2001-04-03\"\r\n}"
+"raw": "{\r\n  \"email\": \"email@google.com\",\r\n  \"nickname\": \"Nick Name\",\r\n  \"birthdate\": \"2001-04-03\"\r\n}"
 },
 "url": {
 "raw": "{{baseUrl}}/users",
@@ -71,7 +71,7 @@
 "});\r",
 "pm.test(\"Test user\", function () {\r",
 "    var jsonData = pm.response.json();\r",
-"    pm.expect(jsonData.email).to.eql('email@yandex.com');\r",
+"    pm.expect(jsonData.email).to.eql('email@google.com');\r",
 "    pm.expect(jsonData.nickname).to.eql('Update Name');\r",
 "    pm.expect(jsonData.birthdate).to.eql('2020-01-30');\r",
 "});"
@@ -96,7 +96,7 @@
 ],
 "body": {
 "mode": "raw",
-"raw": "{\r\n  \"email\": \"email@yandex.com\",\r\n  \"nickname\": \"Update Name\",\r\n  \"birthdate\": \"2020-01-30\"\r\n}"
+"raw": "{\r\n  \"email\": \"email@google.com\",\r\n  \"nickname\": \"Update Name\",\r\n  \"birthdate\": \"2020-01-30\"\r\n}"
 },
 "url": {
 "raw": "{{baseUrl}}/users",
@@ -123,7 +123,7 @@
 "pm.test(\"Test email\", function () {\r",
 "    var jsonData = pm.response.json();\r",
 "    pm.expect(jsonData.length).to.eql(1);\r",
-"    pm.expect(jsonData[0].email).to.eql('email@yandex.com');\r",
+"    pm.expect(jsonData[0].email).to.eql('email@google.com');\r",
 "});"
 ],
 "type": "text/javascript"
@@ -163,8 +163,8 @@
 "pm.test(\"Status code is 200\", function () {\r",
 "    pm.response.to.have.status(200);\r",
 "});\r",
-"pm.test(\"Котограм\", function () {\r",
-"    pm.expect(pm.response.text()).to.include(\"Котограм\");\r",
+"pm.test(\"Catsgram\", function () {\r",
+"    pm.expect(pm.response.text()).to.include(\"Catsgram\");\r",
 "});"
 ],
 "type": "text/javascript"
